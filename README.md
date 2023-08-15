@@ -1,0 +1,2 @@
+# SizifGame
+push the stone
