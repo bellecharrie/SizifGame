@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
+    public float x = 0;
+    public float y = 0;
     public GameObject[] tilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
@@ -14,6 +16,7 @@ public class TileGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         for (int i = 0; i < startTiles; i++)
         {
             SpawnTile(Random.Range(0, tilePrefabs.Length));
@@ -30,14 +33,20 @@ public class TileGenerator : MonoBehaviour
         }
 
     }
-    private void SpawnTile(int tileIndex)
-    {
-        GameObject nextTile = Instantiate(tilePrefabs[tileIndex],transform.right * spawnPos, transform.rotation);
-        activeTiles.Add(nextTile);
-        spawnPos += tileLength;
-    }
+
+   private void SpawnTile(int tileIndex)
+   {
+       
+        
+
+    GameObject nextTile = Instantiate(tilePrefabs[tileIndex], new Vector3(x,y,0), Quaternion.Euler(0f,0f,20f));
+      activeTiles.Add(nextTile);
+        x += 16;
+        y += 5;
+      spawnPos += tileLength;
+   }
     private void DeleteTile()
-    {
+   {
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
     }
