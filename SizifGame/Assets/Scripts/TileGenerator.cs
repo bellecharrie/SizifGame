@@ -32,7 +32,7 @@ public class TileGenerator : MonoBehaviour
     }
     private void SpawnTile(int tileIndex)
     {
-        GameObject nextTile = Instantiate(tilePrefabs[tileIndex], transform.rotation * transform.right * spawnPos, transform.rotation);
+        GameObject nextTile = Instantiate(tilePrefabs[tileIndex],transform.right * spawnPos, transform.rotation);
         activeTiles.Add(nextTile);
         spawnPos += tileLength;
     }
