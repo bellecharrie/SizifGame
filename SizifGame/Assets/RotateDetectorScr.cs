@@ -8,9 +8,10 @@ public class RotateDetectorScr : MonoBehaviour
     public bool almostThere2 = false;
     public bool almostThere3 = false;
     public bool rotated = false;
-    public int rotateCount;
+    public static int rotateCount;
+    
 
-    public bool DetectorOfDegrees = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +21,7 @@ public class RotateDetectorScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DetectorOfDegrees == false)
-        {
-            DetectorOfDegrees = true;
-            Invoke ("DeadDetector()", 1f);
-            
-
-        }
+        
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,16 +54,7 @@ public class RotateDetectorScr : MonoBehaviour
         }
     }
 
-    private void DeadDetector()
-    {
-        DetectorOfDegrees = false;
-      if (rotateCount < 1 )
-      {
-        Debug.Log("dead");
-        
-      }
-      rotateCount = 0;
-    }
+    
 
 
 }

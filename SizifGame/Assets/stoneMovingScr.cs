@@ -10,6 +10,8 @@ public class stoneMovingScr : MonoBehaviour
     private float t = 0.0f;
     [SerializeField]
     private bool moving = false;
+    [SerializeField]
+    private float ballSpeed = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +22,10 @@ public class stoneMovingScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if(Input.GetKeyDown(KeyCode.Space))
+         //if(Input.GetKeyDown(KeyCode.Space))
+         if (RotateDetectorScr.rotateCount > 0)
       {
-        rb.velocity = new Vector3(10,0,0);
+        rb.velocity = new Vector3(ballSpeed,0,0);
         moving = true;
         Debug.Log("move");
       }

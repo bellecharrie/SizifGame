@@ -361,6 +361,7 @@ MonoBehaviour:
   rb: {fileID: 118955782}
   t: 0
   moving: 0
+  ballSpeed: 3
 --- !u!1 &173078268
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,8 +632,6 @@ MonoBehaviour:
   almostThere2: 0
   almostThere3: 0
   rotated: 0
-  rotateCount: 0
-  DetectorOfDegrees: 0
 --- !u!50 &364721303
 Rigidbody2D:
   serializedVersion: 4
@@ -1727,6 +1726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: 0
   speed: 0.4
+  timeLeft: 1.5
+  DetectorOfDegrees: 0
 --- !u!212 &1559530087
 SpriteRenderer:
   m_ObjectHideFlags: 0

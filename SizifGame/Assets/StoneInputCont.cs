@@ -10,6 +10,9 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 
     public float speed = 5f;
 
+    public float timeLeft = 1.5f;
+    public bool DetectorOfDegrees;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,17 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     // Update is called once per frame
     void Update()
     {
-        
+        if (DetectorOfDegrees)
+        {
+            
+           timeLeft -= Time.deltaTime;
+           if(timeLeft < 0f)
+           {
+            DeadDetector();
+            timeLeft = 1.5f;
+           }
+
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -30,6 +43,7 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     }
     public void OnDrag(PointerEventData eventData)
     {
+        DetectorOfDegrees = true;
        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         //transform.rotation = Quaternion.Euler(0f,0f, rotateZ + offset);
@@ -41,4 +55,19 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     {
 
     }
+
+    public void DeadDetector()
+    {
+        
+      if (RotateDetectorScr.rotateCount < 1 )
+      {
+        Debug.Log("dead");
+        
+      }
+      RotateDetectorScr.rotateCount = 0;
+      
+    }
+
+
+
 }
