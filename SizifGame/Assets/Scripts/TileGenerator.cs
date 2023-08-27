@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
-    public float x = 0;
-    public float y = 0;
+    public double x = 0;
+    public double y = 0;
     public GameObject[] tilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
@@ -36,13 +36,10 @@ public class TileGenerator : MonoBehaviour
 
    private void SpawnTile(int tileIndex)
    {
-       
-        
-
-    GameObject nextTile = Instantiate(tilePrefabs[tileIndex], new Vector3(x,y,0), Quaternion.Euler(0f,0f,20f));
+    GameObject nextTile = Instantiate(tilePrefabs[tileIndex], new Vector3((float)x, (float)y,0), Quaternion.Euler(0f,0f,20f));
       activeTiles.Add(nextTile);
-        x += 16;
-        y += 5;
+        x += 18.79385;
+        y += 6.840402;
       spawnPos += tileLength;
    }
     private void DeleteTile()
