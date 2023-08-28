@@ -739,6 +739,7 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -746,11 +747,12 @@ m_ResolvedPackages:
     compatible:
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.3.8
+    recommended: 1.3.9
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -1293,9 +1295,11 @@ m_ResolvedPackages:
     - 1.8.0-pre.1
     - 1.8.0
     - 1.9.0
+    - 1.9.1
     compatible:
     - 1.8.0
     - 1.9.0
+    - 1.9.1
     recommended: 1.8.0
     deprecated:
     - 1.8.0-pre.1
@@ -4900,9 +4904,11 @@ m_ResolvedPackages:
     - 1.0.0-pre.3
     - 1.0.0-pre.4
     - 1.0.0
+    - 1.0.1
     compatible:
     - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.sprite
