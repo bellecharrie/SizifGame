@@ -13,8 +13,13 @@ public class SizifScr : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
+    {
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
         transform.position = stonePosition.position + offsetStone;
         
