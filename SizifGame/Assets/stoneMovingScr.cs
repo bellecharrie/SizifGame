@@ -5,6 +5,7 @@ using UnityEngine;
 public class stoneMovingScr : MonoBehaviour
 {
     public Rigidbody2D rb;
+    
 
     [SerializeField] 
     private float t = 0.0f;
@@ -27,7 +28,7 @@ public class stoneMovingScr : MonoBehaviour
       {
         rb.velocity = new Vector3(ballSpeed,0,0);
         moving = true;
-        Debug.Log("move");
+        //Debug.Log("move");
       }
 
       if(moving)
