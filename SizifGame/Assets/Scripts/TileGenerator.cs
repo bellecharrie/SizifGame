@@ -36,10 +36,10 @@ public class TileGenerator : MonoBehaviour
 
    private void SpawnTile(int tileIndex)
    {
-    GameObject nextTile = Instantiate(tilePrefabs[tileIndex], new Vector3((float)x, (float)y,0), Quaternion.Euler(0f,0f,20f));
+    GameObject nextTile = Instantiate(tilePrefabs[tileIndex], new Vector3((float)x, (float)y,0), Quaternion.Euler(0f,0f,0f));
       activeTiles.Add(nextTile);
-        x += 18.79385;
-        y += 6.840402;
+        x += 19.17667;
+        y += 5.6799;
       spawnPos += tileLength;
    }
     private void DeleteTile()

@@ -1092,9 +1092,9 @@ MonoBehaviour:
   x: 0
   y: 0
   tilePrefabs:
-  - {fileID: 3269366048867648020, guid: c10c6c49d0d23b54780735ca3fb30882, type: 3}
-  - {fileID: 394249961505496137, guid: 228eec8cd9c997243bef32541d0333e8, type: 3}
-  - {fileID: 1711678003207168088, guid: 07532c5b9c2fabe4faea32cbfdd26af5, type: 3}
+  - {fileID: 5839396724057723896, guid: bb4b471922e8d064aa71ee2541d07494, type: 3}
+  - {fileID: 843587601307653640, guid: 8df22c6dcadd1d845ae6d5aa771d9ddb, type: 3}
+  - {fileID: 7679152984439464757, guid: 2b3e0535a973e0e4d91a2df0d1c2fe7d, type: 3}
   player: {fileID: 118955785}
 --- !u!4 &509816233
 Transform:
@@ -1990,8 +1990,8 @@ Transform:
   m_GameObject: {fileID: 951905062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 3.24, z: 10}
-  m_LocalScale: {x: 2.951906, y: 1.315265, z: 1}
+  m_LocalPosition: {x: -24, y: 1.63176, z: 10}
+  m_LocalScale: {x: 2.951906, y: 1.6054662, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -2733,7 +2733,7 @@ Transform:
   m_GameObject: {fileID: 1559530084}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.1, y: -319, z: -1.4140742}
+  m_LocalPosition: {x: -1, y: -879, z: -1.4140742}
   m_LocalScale: {x: 39.965748, y: 39.590813, z: 46.697834}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2752,8 +2752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f309c8723e867b34781759494b8d655d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0
-  speed: 0.4
+  offset: 1
+  speed: 1
   timeLeft: 1.5
   DetectorOfDegrees: 0
 --- !u!212 &1559530087
@@ -2955,8 +2955,8 @@ Transform:
   m_GameObject: {fileID: 1656822643}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.787, y: 3.24, z: 10}
-  m_LocalScale: {x: 2.951906, y: 1.315265, z: 1}
+  m_LocalPosition: {x: 32.709, y: 1.6273, z: 10}
+  m_LocalScale: {x: 2.951906, y: 1.6050501, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -3324,12 +3324,16 @@ PrefabInstance:
       value: gora_1
       objectReference: {fileID: 0}
     - target: {fileID: 3746006457168564499, guid: 8df22c6dcadd1d845ae6d5aa771d9ddb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746006457168564499, guid: 8df22c6dcadd1d845ae6d5aa771d9ddb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.75
+      value: -39.65
       objectReference: {fileID: 0}
     - target: {fileID: 3746006457168564499, guid: 8df22c6dcadd1d845ae6d5aa771d9ddb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.11
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 3746006457168564499, guid: 8df22c6dcadd1d845ae6d5aa771d9ddb, type: 3}
       propertyPath: m_LocalPosition.z
