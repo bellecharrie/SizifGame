@@ -401,6 +401,7 @@
 -analyzer:"D:/UnityHub/2023.1.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/RotateDetectorScr.cs"
 "Assets/Scripts/CameraContreoller.cs"
+"Assets/Scripts/ReloaderScene.cs"
 "Assets/Scripts/RotatorCameraCntrl.cs"
 "Assets/Scripts/ScoreMetr.cs"
 "Assets/Scripts/TileGenerator.cs"

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
-    public double x = 0;
-    public double y = 0;
+    public double x = 16.8157;
+    public double y = 2.679;
     public GameObject[] tilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
@@ -16,7 +16,6 @@ public class TileGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         for (int i = 0; i < startTiles; i++)
         {
             SpawnTile(Random.Range(0, tilePrefabs.Length));
