@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -62,6 +63,7 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
       if (RotateDetectorScr.rotateCount < 1 )
       {
         Debug.Log("dead");
+            SceneManager.LoadScene(0);
         
       }
       RotateDetectorScr.rotateCount = 0;

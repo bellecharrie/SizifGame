@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreMetr : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class ScoreMetr : MonoBehaviour
         // ¬ычисл€ем пройденное рассто€ние между текущей позицией и предыдущей позицией по оси X
         float distanceX = transform.position.x - lastPosition.x;
 
+        
+
         // ≈сли рассто€ние больше нул€, добавл€ем его к общему пройденному рассто€нию
         if (distanceX > 0)
         {
@@ -27,8 +30,8 @@ public class ScoreMetr : MonoBehaviour
             lastPosition = transform.position;
             scoreDisplay.text = "Score: " + (int)distanceTravelled;
         }
-
+ 
         // ¬ыводим пройденное рассто€ние в консоль
-        Debug.Log("ѕройденное рассто€ние по оси X: " + distanceTravelled);
+        // Debug.Log("ѕройденное рассто€ние по оси X: " + distanceTravelled);
     }
 }
