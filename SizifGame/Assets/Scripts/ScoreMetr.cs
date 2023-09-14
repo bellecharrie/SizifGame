@@ -30,6 +30,7 @@ public class ScoreMetr : MonoBehaviour
             lastPosition = transform.position;
             scoreDisplay.text = "Score: " + (int)distanceTravelled;
         }
+        //if ( )
  
         // Выводим пройденное расстояние в консоль
         // Debug.Log("Пройденное расстояние по оси X: " + distanceTravelled);

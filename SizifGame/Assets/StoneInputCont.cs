@@ -30,7 +30,7 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
            if(timeLeft < 0f)
            {
             DeadDetector();
-            timeLeft = 1.5f;
+            timeLeft = 3f;
            }
 
         }
