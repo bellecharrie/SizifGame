@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public GameObject pLost;
     public float offset;
     Camera MainCamera;
 
@@ -63,7 +65,8 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
       if (RotateDetectorScr.rotateCount < 1 )
       {
         Debug.Log("dead");
-            SceneManager.LoadScene(0);
+            Time.timeScale = 0f;
+            pLost.SetActive(true);
         
       }
       RotateDetectorScr.rotateCount = 0;
