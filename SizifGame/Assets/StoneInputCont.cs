@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public GameObject spinToPush;
     public GameObject pLost;
     public float offset;
     Camera MainCamera;
@@ -20,6 +21,7 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     void Start()
     {
         MainCamera = Camera.allCameras[0];
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -47,7 +49,9 @@ public class StoneInputCont : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     public void OnDrag(PointerEventData eventData)
     {
         DetectorOfDegrees = true;
-       Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Time.timeScale = 1f;
+        spinToPush.SetActive(false);
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         //transform.rotation = Quaternion.Euler(0f,0f, rotateZ + offset);
         //Quaternion rotating = Quaternion.LookRotation(difference);

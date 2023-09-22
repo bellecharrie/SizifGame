@@ -15,7 +15,7 @@ public class ButtonRestart : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 1f;
     }
 }

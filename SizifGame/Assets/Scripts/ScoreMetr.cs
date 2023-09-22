@@ -9,6 +9,9 @@ public class ScoreMetr : MonoBehaviour
     private Vector3 lastPosition;
     private double distanceTravelled = 0f;
     public Text scoreDisplay;
+    public Text HighscoreText;
+
+    int highScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +33,14 @@ public class ScoreMetr : MonoBehaviour
             lastPosition = transform.position;
             scoreDisplay.text = "Score: " + (int)distanceTravelled;
         }
-        //if ( )
- 
+
+    
+        if ( PlayerPrefs.GetInt("score") <= distanceTravelled)
+        {
+            PlayerPrefs.SetInt("score", highScore);
+        }
+        HighscoreText.text = "HIGH SCORE: " + PlayerPrefs.GetInt("score").ToString();
+
         // Выводим пройденное расстояние в консоль
         // Debug.Log("Пройденное расстояние по оси X: " + distanceTravelled);
     }
