@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonPause : MonoBehaviour
 {
@@ -14,6 +16,11 @@ public class ButtonPause : MonoBehaviour
     public void ContinueGame()
     {
         panelPause.SetActive(false);
+        Time.timeScale = 1f;
+    }
+    public void GotoHome()
+    {
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 }

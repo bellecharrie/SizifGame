@@ -7,18 +7,21 @@ using UnityEngine.SceneManagement;
 public class ScoreMetr : MonoBehaviour
 {
     private Vector3 lastPosition;
-    private double distanceTravelled = 0f;
+    public double distanceTravelled = 0f;
     public Text scoreDisplay;
     public Text HighscoreText;
+    public int highScore;
 
-    int highScore;
-    // Start is called before the first frame update
     void Start()
     {
         lastPosition = transform.position;
+
+         highScore = PlayerPrefs.GetInt("score",highScore);
+       
+
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         // ¬ычисл€ем пройденное рассто€ние между текущей позицией и предыдущей позицией по оси X
@@ -32,16 +35,18 @@ public class ScoreMetr : MonoBehaviour
             distanceTravelled += distanceX;
             lastPosition = transform.position;
             scoreDisplay.text = "Score: " + (int)distanceTravelled;
+
+           
+
         }
 
-    
-        if ( PlayerPrefs.GetInt("score") <= distanceTravelled)
+        if (highScore < (int)distanceTravelled)
         {
-            PlayerPrefs.SetInt("score", highScore);
+                highScore = (int)distanceTravelled;
+                PlayerPrefs.SetInt("score",highScore);
         }
-        HighscoreText.text = "HIGH SCORE: " + PlayerPrefs.GetInt("score").ToString();
-
-        // ¬ыводим пройденное рассто€ние в консоль
-        // Debug.Log("ѕройденное рассто€ние по оси X: " + distanceTravelled);
+        PlayerPrefs.SetInt("score", highScore);
+        HighscoreText.text = "HIGH SCORE: " + highScore;
+            
     }
 }
