@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 40
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 36538
+  m_LastSelectedObjectID: 27048
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,7 +436,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Icons
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -446,15 +446,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Icons
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Game Prgm\Sizif\SizifGame\SizifGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac670000
-    m_LastClickedID: 26540
+    m_SelectedIDs: a8670000
+    m_LastClickedID: 26536
     m_ExpandedIDs: 000000004c6700004e67000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -627,9 +627,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e6730000
-      m_LastClickedID: 0
-      m_ExpandedIDs: caefffffcef1ffff02fbffff5c770000
+      m_SelectedIDs: 7af0ffff
+      m_LastClickedID: -3974
+      m_ExpandedIDs: bef8ffff02fbffff5468000020690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -912,9 +912,9 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 24, y: 0}
+      displayed: 1
+      snapOffset: {x: 24, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
       index: 10
@@ -1116,9 +1116,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1151278, y: -0.15748958, z: -0.6180289}
+    m_Target: {x: 35.593616, y: 16.703817, z: -0.025693666}
     speed: 2
-    m_Value: {x: 1.146152, y: -0.19885519, z: -0.6151458}
+    m_Value: {x: 35.593616, y: 16.703817, z: -0.025693666}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1168,9 +1168,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.695097
+    m_Target: 9.376102
     speed: 2
-    m_Value: 6.406791
+    m_Value: 9.376102
   m_Ortho:
     m_Target: 1
     speed: 2
