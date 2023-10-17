@@ -46,7 +46,7 @@ public class ScoreMetr : MonoBehaviour
                 PlayerPrefs.SetInt("score",highScore);
         }
         PlayerPrefs.SetInt("score", highScore);
-        HighscoreText.text = "HIGH SCORE: " + highScore;
+        HighscoreText.text = " " +highScore;
             
     }
 }

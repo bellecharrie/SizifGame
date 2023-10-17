@@ -10,10 +10,4 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void ExitSyzif()
-    {
-        Application.Quit();
-        Debug.Log("Quit");
-    }
 }
